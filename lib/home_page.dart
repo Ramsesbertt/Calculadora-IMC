@@ -22,14 +22,15 @@ class _HomePageState extends State<HomePage> {
       _resultadoIMC = calcularIMC();
       if (_resultadoIMC! < 18.5) {
         _clasificacion = "Desnutrición";
-        _mensaje = "Estás en desnutrición, se recomienda alimentarse mejor";
+        _mensaje =
+            "Estás en desnutrición, se recomienda alimentarse mucho mejor";
       } else if (_resultadoIMC! >= 18.5 && _resultadoIMC! <= 24.9) {
         _clasificacion = "Normal";
-        _mensaje = "Estás muy bien, sigue así, realiza actividad física";
+        _mensaje = "Estás muy bien, sigue así, realiza mas actividad física";
       } else {
         _clasificacion = "Sobrepeso";
         _mensaje =
-            "Estás en sobrepeso, se recomienda hacer ejercicio y dieta estricta";
+            "Estás en sobrepeso, se recomienda hacer mas ejercicio y dieta estricta";
       }
     });
   }
